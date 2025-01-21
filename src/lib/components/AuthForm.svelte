@@ -15,7 +15,11 @@
 		{isRegistration ? 'Register' : 'Login'}
 	</h1>
 	<div class="form-and-social-login">
-		<form class="auth-form" method="POST">
+		<form
+			class="auth-form"
+			method="POST"
+			action={isRegistration ? '' : '/login/?/signInWithPassword'}
+		>
 			{#if form && form.errors?.length}
 				{#each form.errors as error}
 					<div class="auth-error">
@@ -49,6 +53,9 @@
 			{/if}
 		</form>
 		<div class="social-login"></div>
+		<form method="POST" action={isRegistration ? '/login/?/googlelogin' : '?/googlelogin'}>
+			<Button type="submit">Login with Google</Button>
+		</form>
 	</div>
 </div>
 

@@ -75,7 +75,7 @@ const authGuard: Handle = async ({ event, resolve }) => {
     event.locals.session &&
     ['/register', '/login'].includes (event.url.pathname) 
   ) {
-    redirect(303, '/private/dashboard')
+    redirect(303, '/login')
   }
 
   return resolve(event)
