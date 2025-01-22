@@ -53,7 +53,7 @@
 			{/if}
 		</form>
 		<div class="social-login"></div>
-		<form method="POST" action={isRegistration ? '/login/?/googlelogin' : '?/googlelogin'}>
+		<form method="POST" action={isRegistration ? '/login/?/googleLogin' : '?/googleLogin'}>
 			<Button type="submit">Login with Google</Button>
 		</form>
 	</div>

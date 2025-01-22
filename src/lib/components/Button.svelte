@@ -59,13 +59,13 @@
 	}
 
 	.btn {
-		padding: 0.375rem 0.75rem;
+		padding: 12px 24px;
 		min-width: 230px;
 		text-align: center;
 		background-color: black;
+		border-radius: 12px;
 		color: white;
-		border: white;
-		border-radius: 8px;
+		border: 1px solid white;
 		font-weight: normal;
 		font-size: 22px;
 	}
@@ -73,11 +73,11 @@
 	.btn-secondary {
 		background-color: white;
 		color: black;
-		border: black;
+		border: 1px solid black;
 	}
 
 	.btn-danger {
-		background-color: red;
+		background-color: rgb(136, 4, 4);
 	}
 
 	.btn-menu {
