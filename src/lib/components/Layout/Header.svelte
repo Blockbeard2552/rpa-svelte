@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Button from '$components/Button.svelte';
-	import { getUserState } from '$components/state/user-state.svelte';
+	import { getUserState } from '$lib/state/user-state.svelte';
 
 	let userContext = getUserState();
 	let { user } = $derived(userContext);
