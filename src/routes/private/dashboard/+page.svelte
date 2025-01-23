@@ -18,7 +18,18 @@
 			<p>Here is some text.</p>
 		</div>
 	</div>
-	<BookCategory booksToDisplay={allBooks.slice(0, 10)} categoryName="Your favorite books" />
+	<BookCategory
+		booksToDisplay={userContext.getHighestRatedBooks()}
+		categoryName={'Your favorite books'}
+	/>
+	<BookCategory
+		booksToDisplay={userContext.getUreadBooks()}
+		categoryName={'Recently added, unread books'}
+	/>
+	<BookCategory
+		booksToDisplay={allBooks.slice(0, 10)}
+		categoryName={`Your favorite books from your favorite genre: ${userContext.getFavoriteGenre()}`}
+	/>
 </div>
 
 <style>
