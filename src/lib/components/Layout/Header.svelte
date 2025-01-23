@@ -9,7 +9,7 @@
 </script>
 
 <header>
-	<a href="/">
+	<a href={user ? '/private/dashboard' : '/'}>
 		<img
 			class="logo"
 			src={'https://res.cloudinary.com/dz6c3v3tr/image/upload/v1735773584/navLogo_119x48_mbb5db.png'}
